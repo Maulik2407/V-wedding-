@@ -1,0 +1,154 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main-con{
+    margin-top: -10px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid green;
+}
+.main-con{
+    overflow: hidden;
+    background: url(main-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main-data{
+    height: 650px;
+    /* border: 2px solid red; */
+    z-index: 11111;
+}
+.main-data h1{
+    font-size: 70px;
+    text-align: center;
+    z-index: 111;
+    -webkit-text-stroke: 1px green;
+    /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.719); */
+}
+.p{
+    margin-top: 80px;
+
+}
+.sec-left{
+    height: 250px;
+    /* border: 2px solid red; */
+}
+.chotu{
+    gap: -100px;
+}
+.sec-left h1{
+    font-size: 60px;
+    /* text-align: center; */
+    z-index: 111;
+}
+.sec-right{
+    height: 300px;
+    /* border: 2px solid red; */
+}
+.second-card{
+    height: 430px;
+    /* border: 2px solid red; */
+}
+.second-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.last-sec{
+    background: url(last-sec.avif);
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+}
+.last-sec:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.596);
+}
+.last-data{
+    height: 450px;
+    /* border: 2px solid red; */
+    z-index: 111;
+}
+.last-data h1{
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+.last-data p{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.fourth-card{
+    height: 380px;
+    /* border: 2px solid blue; */
+}
+.fourth-card img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.fourth-card p{
+    text-align: center;
+}
+.fourth-card span{
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+}
+.head-3{
+    text-align: center;
+}
+.form{
+    height: 100px;
+    /* border: 2px solid red; */
+}
+.form input{
+    
+    outline: none;
+    border: none;
+    padding: 4px;
+    border-bottom: 2px solid grey;
+}
+.footer-card{
+    height: 230px;
+    /* border: 3px solid red; */
+}
+#contacts{
+    position: relative;
+}
+.footer{
+    overflow: hidden;
+}
+.side-box{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    right: 40px;
+    color: black;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: .5s all ease-in-out;
+}
+.footer:hover .side-box{
+    opacity: 1;
+    transform: translate(0);
+    transition: .5s all ease-in-out;
+}
+@media only screen and (max-width:600px){
+    
+    .last-sec{
+        background-position-x: -150px;
+    }
+}
